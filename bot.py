@@ -1,5 +1,6 @@
 import nextcord
 from nextcord.ext import commands
+from donner import token
 intents = nextcord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="/",help_command=None,intents=intents)
@@ -52,4 +53,4 @@ async def test(ctx):
             role_list.append(channel)
     print(role_list[1])
 
-bot.run("OTY5OTk1NjY5MzI0NTkxMTg1.GT8jIm.LvWkdnw9GGJA7XnR9hRT-LtDUwGWNqqqlH76ts")
+bot.run(token)
